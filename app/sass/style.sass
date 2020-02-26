@@ -1,0 +1,103 @@
+@import "libs"
+@import "fonts"
+@import "global"
+@import "scrollbar"
+
+.our-journal
+  &__grid-box
+    &-first
+      grid-column-start: 1
+      grid-column-end: 3
+      grid-row-start: 1
+      grid-row-end: 2
+      display: flex
+      flex-direction: row-reverse
+      align-items: center
+      .our-journal__card-type:before
+        left: -10px
+
+
+
+    &-second
+      grid-column-start: 1
+      grid-column-end: 3
+      grid-row-start: 2
+      grid-row-end: 3
+      display: flex
+      align-items: center
+      .our-journal__card-type:before
+        right: -10px
+
+    &-third
+      grid-column-start: 3
+      grid-column-end: 4
+      grid-row-start: 1
+      grid-row-end: 3
+      flex-direction: column-reverse
+      display: flex
+      align-items: center
+      .our-journal__card-type:before
+        top: -10px
+
+  &__wrap
+    width: 100%
+    box-shadow: 0 0 21px rgba(6, 6, 6, 0.13)
+    display: grid
+    overflow: hidden
+
+  &__item
+    width: calc(1140px / 3)
+    min-height: 380px
+    position: relative
+    &-bg
+      position: absolute
+      left: 0
+      right: 0
+      top: 0
+      bottom: 0
+    &-ic
+      position: absolute
+      top: 50%
+      left: 50%
+      transform: translate(-50%, -50%)
+  &__card
+    &-type
+      padding: 45px 51px
+      text-align: center
+      &:before
+        content: ''
+        width: 20px
+        height: 20px
+        background: white
+        display: block
+        position: absolute
+        transform: rotate(-45deg)
+        z-index: 1
+        top: 50px
+      span
+        color: $blue
+        display: block
+        text-transform: uppercase
+        font-size: 11px
+        font-weight: 700
+        margin-bottom: 50px
+        letter-spacing: 1.74px
+      strong
+        height: 55px
+        display: flex
+        align-items: center
+        display: block
+        text-transform: uppercase
+        letter-spacing: 2.55px
+        margin-bottom: 27px
+      p
+        display: block
+        color: $gray
+        font-size: 14px
+        font-weight: 400
+        line-height: 24px
+    &-number
+      margin-top: 25px
+      font-style: italic
+
+@import "media"

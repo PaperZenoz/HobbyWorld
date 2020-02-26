@@ -1,0 +1,56 @@
+/*media
+
+
+.container
+  max-width: 1140px
+  margin: 0 auto
+
+
+@media (max-width: 1260px)
+  .our-journal
+    &__wrap
+      max-width: calc(380px * 2)
+      margin: 0 auto
+    &__grid-box
+      &-first
+        justify-content: flex-end
+      &-second
+      &-third
+        grid-column-start: 1
+        grid-column-end: 3
+        grid-row-start: 3
+        grid-row-end: 4
+        flex-direction: row-reverse
+        justify-content: flex-end
+    &__card-type:before
+      display: none
+
+
+
+
+
+
+@media (max-width: 900px)
+  body
+    padding: 0 15px 60px
+  .our-journal
+    &__wrap
+      max-width: 380px
+      margin: 0 auto
+      flex-direction: column
+      display: flex
+    &__grid-box
+      &-first
+        flex-direction: column-reverse
+      &-second
+        flex-direction: column-reverse
+      &-third
+        flex-direction: column-reverse
+
+//
+//
+//@media (max-width: 768px)
+//
+//
+//@media (max-width: 576px)
+
