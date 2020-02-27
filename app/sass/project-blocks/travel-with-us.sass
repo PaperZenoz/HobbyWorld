@@ -1,0 +1,61 @@
+#travel
+  position: relative
+.travel__
+  &map
+    width: 1470px
+    height: 733px
+    background: url("../../img/travel-with-us/worldmap-dots.png") top/cover
+    position: absolute
+    left: 50%
+    transform: translateX(-50%)
+    top: -5px
+  &wrap
+    justify-content: space-between
+    display: flex
+  &item
+    width: 200px
+    min-height: 382px
+    position: relative
+    padding: 15px 20px 15px
+    color: white
+    display: flex
+    flex-direction: column
+    justify-content: space-between
+    &-text
+      position: relative
+      span
+        font-size: 28px
+        display: block
+        margin-bottom: 15px
+    &-bg
+      position: absolute
+      top: 0
+      left: 0
+      right: 0
+      bottom: 0
+      &:before
+        position: absolute
+        bottom: 0
+        left: 0
+        right: 0
+        height: 62px
+        display: block
+        content: ''
+        background: black
+        opacity: 0.2
+    &-stars
+      position: relative
+      z-index: 1
+      top: -10px
+      left: -10px
+    &-price
+      position: relative
+      display: flex
+      justify-content: space-between
+      align-items: center
+      p
+        text-decoration: line-through
+      span
+        font-weight: bold
+        font-size: 26px
+
