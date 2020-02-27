@@ -1,0 +1,133 @@
+$blue: #16b5ef
+$gray: #777777
+
+#review
+  position: relative
+  min-height: 1275px
+.client__bg
+  max-width: 1920px
+  height: 1206px
+  background: url("../../img/our-clients-say/client-bg.jpg") top/cover
+  position: absolute
+  width: 100%
+  left: 50%
+  transform: translateX(-50%)
+  bottom: 0
+
+
+.client__review-
+  &wrap
+    display: flex
+    justify-content: space-between
+    position: relative
+    z-index: 1
+    margin-bottom: 140px
+  &item
+    max-width: 529px
+  &text
+    font-size: 18px
+    line-height: 33px
+    color: #bcbcbc
+    margin-bottom: 30px
+    &:before
+      content: ''
+      display: block
+      width: 24px
+      margin-bottom: 19px
+      margin-top: 20px
+      height: 22px
+      background: url("../../img/our-clients-say/“.png") no-repeat
+  &user
+    display: flex
+  &photo
+    margin-right: 20px
+  &name
+    display: flex
+    color: $blue
+    align-items: center
+    strong
+      margin-right: 5px
+  &contacts
+    width: 515px
+    margin: 0 auto
+    box-shadow: 0 5px 51px rgba(0, 0, 0, 0.15)
+    border-radius: 8px
+    padding: 40px 30px
+    position: relative
+    h3
+      color: $blue
+      text-transform: uppercase
+      text-align: center
+      letter-spacing: 3.6px
+      font-size: 36px
+      font-weight: 700
+      margin-bottom: 5px
+    span
+      display: block
+      margin-bottom: 35px
+
+    &-bg
+      position: absolute
+      top: 0
+      left: 0
+      right: 0
+      bottom: 0
+      z-index: 1
+    &-content
+      position: relative
+      z-index: 2
+      text-align: center
+      input
+        background: white
+        height: 60px
+        width: 100%
+        display: block
+        border: 3px solid #ffffff
+        border-radius: 4px
+        margin-bottom: 20px
+        padding-left: 20px
+        font-size: 18px
+      button
+        height: 70px
+        width: 100%
+        display: block
+        background: $blue
+        color: white
+        display: flex
+        justify-content: center
+        align-items: center
+        font-weight: 700
+        text-transform: uppercase
+        letter-spacing: 2.56px
+        border-radius: 4px
+
+.client__review-footer
+    position: absolute
+    bottom: 0
+    width: 100vw
+    color: white
+    height: 80px
+    display: flex
+    .container
+      display: flex
+      justify-content: space-between
+      align-items: center
+
+
+
+.client__footer
+  &-text
+    font-size: 18px
+  &-social
+    display: flex
+    align-items: center
+    a
+      display: block
+      margin-right: 5px
+      &:last-child
+        margin-right: 0
+  &-number
+    p
+      font-size: 27px
+      font-weight: bold
+
