@@ -1,6 +1,7 @@
 #travel
   position: relative
   min-height: 960px
+  overflow: hidden
 .travel__
   &bg
     position: absolute
@@ -22,6 +23,9 @@
   &wrap
     justify-content: space-between
     display: flex
+    flex-wrap: wrap
+    justify-content: center
+
   &item
     width: 200px
     min-height: 382px
@@ -31,6 +35,12 @@
     display: flex
     flex-direction: column
     justify-content: space-between
+    margin: 0 10px 10px
+    &:first-child
+      margin-left: 0
+    &:last-child
+      margin-right: 0
+
     &-text
       position: relative
       span

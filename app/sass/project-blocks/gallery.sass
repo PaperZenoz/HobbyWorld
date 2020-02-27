@@ -3,30 +3,36 @@
     display: flex
     justify-content: center
     margin-bottom: 80px
+    flex-wrap: wrap
   &col
     display: flex
     flex-direction: column
-    margin-right: 30px
+    //margin-right: 20px
+    img
+      padding: 10px
     &:first-child
       width: 263px
     &:nth-child(2)
       width: 361px
     &:last-child
       width: 457px
-      margin-right: 0
+      //margin-right: 0
     img:first-child
-      margin-bottom: 30px
+      //margin-bottom: 20px
 
 .brands
     background-color: #f8f9fa
     height: 180px
     display: flex
-    justify-content: space-between
     align-items: center
     &__wrap
-      justify-content: space-between
       display: flex
       align-items: center
+      flex-wrap: wrap
+      justify-content: space-between
+
+
       img
         background: #bcbcbc
         height: max-content
+        margin: 10px
